@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import CarCard from "../../components/CarCards/CarCard";
+import ViewCarCard from "../../components/ViewCarCard/ViewCarCard";
 import "./Cars.css";
 
 let MyCarDetails = [
@@ -8,8 +9,8 @@ let MyCarDetails = [
     model: "Fabia",
     color: "grey",
     regNum: "KL02A1233",
-    parkingSlot:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
+    parkingSlot: "Lorem Ipsum",
     year: "2010",
   },
   {
@@ -17,8 +18,8 @@ let MyCarDetails = [
     model: "Fabia",
     color: "grey",
     regNum: "KL02A1233",
-    parkingSlot:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
+    parkingSlot: "Lorem Ipsum",
     year: "2010",
   },
   {
@@ -26,8 +27,8 @@ let MyCarDetails = [
     model: "Fabia",
     color: "grey",
     regNum: "KL02A1233",
-    parkingSlot:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
+    parkingSlot: "Lorem Ipsum",
     year: "2010",
   },
   {
@@ -35,8 +36,8 @@ let MyCarDetails = [
     model: "Fabia",
     color: "grey",
     regNum: "KL02A1233",
-    parkingSlot:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
+    parkingSlot: "Lorem Ipsum",
     year: "2010",
   },
   {
@@ -44,8 +45,8 @@ let MyCarDetails = [
     model: "Fabia",
     color: "grey",
     regNum: "KL02A1233",
-    parkingSlot:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
+    parkingSlot: "Lorem Ipsum",
     year: "2010",
   },
   {
@@ -53,8 +54,7 @@ let MyCarDetails = [
     model: "Fabia",
     color: "grey",
     regNum: "KL02A1233",
-    parkingSlot:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    parkingSlot: "Lorem Ipsum",
     year: "2010",
   },
 ];
@@ -73,7 +73,7 @@ function Cars() {
               model={items.model}
               color={items.color}
               regNum={items.regNum}
-              parking={items.parkingSlot}
+              parkingSlot={items.parkingSlot}
               year={items.year}
             />
           ))}

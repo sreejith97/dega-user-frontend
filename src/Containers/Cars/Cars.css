@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap");
+
+.header h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+.car-card-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 5px;
+}
+
+.car-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

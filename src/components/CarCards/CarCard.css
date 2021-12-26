@@ -1,0 +1,41 @@
+.car-card {
+  border: 1px solid black;
+  width: 15rem;
+  height: 10rem;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.car-card h1 {
+  line-height: 1.8rem;
+}
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+.card-buttons button {
+  width: 6rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.card-buttons button:nth-child(1) {
+  background-color: lightblue;
+}
+.card-buttons button:nth-child(2) {
+  background-color: lightyellow;
+}
+
+.car-card-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 5px;
+}

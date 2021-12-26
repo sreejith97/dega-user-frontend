@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddCarPopup from "../../components/AddCarPopup/AddCarPopup";
 import CarCard from "../../components/CarCards/CarCard";
 import ViewCarCard from "../../components/ViewCarCard/ViewCarCard";
 import "./Cars.css";
@@ -60,6 +61,7 @@ let MyCarDetails = [
 ];
 
 function Cars() {
+  const [closeAddPopup, setCloseAddPopup] = useState(false);
   return (
     <div>
       <div className="car-container">
@@ -77,12 +79,16 @@ function Cars() {
               year={items.year}
             />
           ))}
-          <div className="car-card-empty">
+          <div
+            onClick={() => setCloseAddPopup(true)}
+            className="car-card-empty"
+          >
             <div>
               <img src="../svg/add.svg" alt="" width="50px" />
             </div>
             <div>Add New Car</div>
           </div>
+          {closeAddPopup && <AddCarPopup closeAddPopup={setCloseAddPopup} />}
         </div>
       </div>
     </div>

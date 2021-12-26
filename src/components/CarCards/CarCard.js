@@ -11,23 +11,18 @@ function CarCard(props) {
         <h1>Model : {props.model}</h1>
         <h1>Color : {props.color}</h1>
         <div className="card-buttons">
-          <button>View</button>
           <button
             className="openCardBtn"
             onClick={() => {
               setViewCarCard(true);
             }}
           >
-            Edit
+            View
           </button>
         </div>
       </div>
       {openViewCarCard && (
-        <ViewCarCard
-          closeViewCard={setViewCarCard}
-          props={props}
-          par={props.parkingSlot}
-        />
+        <ViewCarCard closeViewCard={setViewCarCard} props={props} />
       )}
     </div>
   );

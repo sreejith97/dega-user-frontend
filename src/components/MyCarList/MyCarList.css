@@ -1,0 +1,11 @@
+.small-car-card {
+  height: 35px;
+  width: 100px;
+  background-color: #a0dbfd5e;
+  border: 3px solid rgba(50, 180, 255, 0.671);
+  border-radius: 50px;
+}
+
+.small-car-card h1 {
+  font-size: 11px;
+}

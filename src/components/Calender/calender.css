@@ -1,0 +1,9 @@
+.back-color {
+  background-color: red;
+}
+
+.color-indicator span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}

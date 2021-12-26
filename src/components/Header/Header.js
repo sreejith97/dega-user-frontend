@@ -14,7 +14,7 @@ function Header() {
         </div>
         <div>
           <button className="flex-center ">
-            <img className="svg-img" src="../svg/profile.svg" alt="" />
+            <img className="svg-img" src="../svg/logout.svg" alt="" />
           </button>
         </div>
       </div>

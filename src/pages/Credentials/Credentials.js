@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Login from "../../Containers/Login/Login";
 import "./credentials.css";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import Signup from "../../Containers/Signup/Signup";
 
-function Credentials() {
+function Credentials(props) {
+  const [auth, setAuth] = useState(props.auth);
+  const navigate = useNavigate();
+  console.log(auth);
   return (
     <div>
-      <Routes>
+      {auth !=1 ? (<><Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes>
+      </Routes></>):(window.location.href="/")}
+      
     </div>
   );
 }

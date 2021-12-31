@@ -25,7 +25,7 @@ function Login() {
 
         dispatch(setLoggedInCredentials(response.data));
         localStorage.setItem('userId',response.data.token);
-        navigate('/user')
+        navigate('/')
         
 
       }
